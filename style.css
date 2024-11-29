@@ -300,8 +300,11 @@ footer {
         padding: 1rem 1rem;
         justify-content: space-between;
     }
-    #infosContainer h2,#infosContainer a, #infosContainer p{
+    #infosContainer h2{
         font-size: 1rem;
+    }
+    #infosContainer a, #infosContainer p{
+        font-size: 0.6rem;
     }
     #infosContainer img{
         width: 1rem;

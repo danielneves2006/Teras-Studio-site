@@ -1,0 +1,244 @@
+@font-face {
+    font-family:CaesarDressing;
+    src: url(font/CaesarDressing-Regular.ttf);
+}
+
+@font-face {
+    font-family:Anton;
+    src: url(font/Anton-Regular.ttf);
+}
+
+body {
+    background-color: #202020;
+}
+
+h1 {
+    color: #958774;
+}
+a{
+    cursor: pointer;
+}
+
+* {
+    margin: 0%;
+    transition: opacity ease-in-out 0.2s;
+}
+
+.NavBar {
+    padding: 0.5rem 0;
+    background-color: #958774;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SmallBar {
+    width: 4px;
+    height: 44px;
+    background-color: #000;
+}
+
+.NavBar a {
+    font-family: CaesarDressing;
+    color: #000;
+    height: fit-content;
+    font-size: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.NavBar a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+
+.LogoTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    font-size: 2.4vw;
+    font-family: Anton;
+    color: #bcbcbc;
+    text-align: center;
+    margin: 0 8rem;
+}
+
+#banner p:hover{
+    color: #fff;
+    transition: ease-in-out .2s;
+    text-shadow: 0 0 10px #fff,
+                0 0 20px #9c9c9c,
+                0 0 30px #9c9c9c;}
+
+#bannerLogo {
+    padding-top: 2rem;
+    width: 100%; 
+    height: fit-content; 
+    background-image: url('img/topoBackground.svg'); 
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: #202020;    
+}
+
+#bannerLogo h1 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+}
+
+#bannerLogo img {
+    width: 30%;
+}
+
+.logo1 {
+    display: block;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+.logo .logo1:hover {
+    transition: ease-in-out .2s;
+    transform: scale(1.03);
+}
+
+.jogo {
+    margin-top: 15rem;
+    background-color: #202020;
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogo h1 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+}
+
+.jogo p {
+    font-size: 2rem;
+    font-family: Anton;
+    color: #fff;
+    text-align: center;
+}
+.jogo span{
+    color: #E0BA52;
+}
+
+.jogo a {
+    padding-top: 28px;
+    margin-bottom: 4rem;
+    height: fit-content;
+    display: inline-block;
+}
+
+.jogo img {
+    width: 100%;
+    transition: all ease-in-out 0.2s;
+    opacity: 50%;
+}
+
+.jogo img:hover {
+    opacity: 100%;
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+footer {
+    background-color: #958774;
+    margin-top: 200px;
+}
+
+#infosContainer {
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+
+#infosContainer h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#infosContainer p {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.socialMedia:hover {
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+#teamContainer {
+    text-align: center;
+}
+#teamContainer span{
+    color:#5A4933 ;
+}
+
+#projectsContainer {
+    text-align: left;
+}
+#projectsContainer a{
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+#projectsContainer a:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+
+#contacts p {
+    font-size: 1rem;
+    font-family: Anton;
+    color: #fff
+}
+#contacts span {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #5A4933
+}
+
+#contacts h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}

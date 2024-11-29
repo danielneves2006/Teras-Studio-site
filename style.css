@@ -54,6 +54,9 @@ a{
     transform: scale(1.05);
     transition: ease-in-out .2s;
 }
+.NavBar img{
+    width: 4rem;
+}
 
 .LogoTitle {
     display: flex;
@@ -252,6 +255,9 @@ footer {
 @media screen and (max-width: 1000px){
     .NavBar  a {
         font-size: 1.4rem;
+    }
+    .NavBar img{
+        width: 3rem;
     }
     .NavBar #title, #barraUm {
         display: none;

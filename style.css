@@ -60,7 +60,9 @@ a{
     justify-content: center;
     align-items: center;
 }
-
+.LogoTitle img{
+    width: 5rem;
+}
 .Menu {
     display: flex;
     justify-content: center;
@@ -68,7 +70,7 @@ a{
 }
 
 #banner {
-    font-size: 2.4vw;
+    font-size: 2.4rem;
     font-family: Anton;
     color: #bcbcbc;
     text-align: center;
@@ -80,7 +82,8 @@ a{
     transition: ease-in-out .2s;
     text-shadow: 0 0 10px #fff,
                 0 0 20px #9c9c9c,
-                0 0 30px #9c9c9c;}
+                0 0 30px #9c9c9c;
+}
 
 #bannerLogo {
     padding-top: 2rem;
@@ -179,6 +182,9 @@ footer {
     font-family: Anton;
     color: #fff;
 }
+#infosContainer img{
+    width: 35px;
+}
 
 .socialMedia {
     display: flex;
@@ -241,4 +247,65 @@ footer {
     font-family: CaesarDressing;
     font-size: 3rem;
     margin-bottom: 10px;
+    
+}
+@media screen and (max-width: 1000px){
+    .NavBar  a {
+        font-size: 1.4rem;
+    }
+    .NavBar #title, #barraUm {
+        display: none;
+    }
+
+
+    /*Banner*/
+    #banner {
+        margin: 1rem ;
+        font-size: 1.4rem;
+    }
+
+    #bannerLogo h1 {
+        font-size: 2rem;
+    }
+    #bannerLogo img {
+        width: 40%;
+    }
+
+    /*Jogos*/
+    .jogo {
+        margin-top: 8rem;
+        padding: 2rem;
+
+    }
+    .jogo h1 {
+        font-size:2rem;
+    }
+    
+    .jogo p {
+        font-size: 1rem;
+    }
+
+    
+    .jogo a {
+        padding-top: 28px;
+        margin-bottom: 2rem;
+        height: fit-content;
+        display: inline-block;
+    }
+
+    /*Rodapé*/
+
+    #infosContainer {
+        display: flex;
+        padding: 1rem 1rem;
+        justify-content: space-between;
+    }
+    #infosContainer h2,#infosContainer a, #infosContainer p{
+        font-size: 1rem;
+    }
+    #infosContainer img{
+        width: 1rem;
+    }
+    
+  
 }

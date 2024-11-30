@@ -23,7 +23,7 @@ a{
     margin: 0%;
     transition: opacity ease-in-out 0.2s;
 }
-
+/*Cabeçalho*/
 .NavBar {
     padding: 0.5rem 0;
     background-color: #958774;
@@ -71,7 +71,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-
+/*Banner*/
 #banner {
     font-size: 2.4rem;
     font-family: Anton;
@@ -80,19 +80,13 @@ a{
     margin: 0 8rem;
 }
 
-#banner p:hover{
-    color: #fff;
-    transition: ease-in-out .2s;
-    text-shadow: 0 0 10px #fff,
-                0 0 20px #9c9c9c,
-                0 0 30px #9c9c9c;
-}
 
 #bannerLogo {
     padding-top: 2rem;
+    padding-bottom: 25rem;
     width: 100%; 
     height: fit-content; 
-    background-image: url('img/topoBackground.svg'); 
+    background-image: url('img/topoBackground2.svg'); 
     background-size: contain;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -101,68 +95,124 @@ a{
 
 #bannerLogo h1 {
     font-family: CaesarDressing;
-    font-size: 3rem;
+    font-size: 5rem;
+    text-decoration: underline;
 }
-
-#bannerLogo img {
-    width: 30%;
-}
-
-.logo1 {
-    display: block;
-    margin: 0 auto;
-    padding-top: 3rem;
-    padding-bottom: 8rem;
-}
-
-.logo .logo1:hover {
+#bannerLogo h1:hover {
+    color: #dfdfdf;
     transition: ease-in-out .2s;
-    transform: scale(1.03);
+    text-shadow: 0 0 10px #cfcfcf,
+                0 0 20px #9c9c9c,
+                0 0 30px #9c9c9c;
+}
+/*foto time*/
+#fotoTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#fotoTime img{
+    width: 95%;
 }
 
-.jogo {
-    margin-top: 15rem;
-    background-color: #202020;
-    padding: 0 8rem;
+
+/*Créditos*/
+.Creditos{
+    margin: 8rem;
+}
+.flex{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    gap: 10rem;
+}
+.Creditos h1{
+    font-family: CaesarDressing;
+    color: #958774;
+    height: fit-content;
+    font-size: 4rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+.Creditos h2{
+    font-family: CaesarDressing;
+    color: #958774;
+    height: fit-content;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+.Creditos img{
+    width: 3.5rem;
+}
+.Creditos p {
+    display: flex;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+}
+.Creditos .ElementoCredito{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 1rem; 
+    padding-bottom: 0.2rem;  
+}
+/*Fotos*/
+#eventoTitle h1{
+    font-family: CaesarDressing;
+    color: #958774;
+    height: fit-content;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.jogo h1 {
-    font-family: CaesarDressing;
-    font-size: 3rem;
+#eventoContainer {
+    padding: 0 6rem;
+    box-sizing: border-box;
 }
 
-.jogo p {
-    font-size: 2rem;
-    font-family: Anton;
-    color: #fff;
-    text-align: center;
-}
-.jogo span{
-    color: #E0BA52;
+#fotoPalestra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.jogo a {
-    padding-top: 28px;
-    margin-bottom: 4rem;
-    height: fit-content;
-    display: inline-block;
+#fotoPalestra img{
+    max-width: 100%;
+    margin-bottom: 2rem;
 }
 
-.jogo img {
-    width: 100%;
-    transition: all ease-in-out 0.2s;
-    opacity: 50%;
+#fotosGerais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.jogo img:hover {
-    opacity: 100%;
-    transform: scale(1.03);
-    transition: ease-in-out .2s;
+#foto1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    padding-top: 3rem;
 }
 
+#foto1 img{
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+/*Rodapé*/
 footer {
     background-color: #958774;
     margin-top: 10rem;
@@ -267,39 +317,74 @@ footer {
     /*Banner*/
     #banner {
         margin: 1rem ;
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     #bannerLogo h1 {
         font-size: 2rem;
     }
-    #bannerLogo img {
-        width: 40%;
+    #bannerLogo {
+        padding-bottom: 10rem;
     }
 
-    /*Jogos*/
-    .jogo {
-        margin-top: 8rem;
-        padding: 2rem;
+    /*fotoTime*/
+    #fotoTime img{
+        width: 90%;
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+    }
+    /*Créditos*/
+    .Creditos{
+        margin: 8rem;
+    }
+    .flex{  
+        gap: 3rem;
+    }
+    .Creditos h1{
+        font-size: 2rem;
+    }
+    .Creditos h2{
+        padding-top: 1rem;
+        font-size: 1.3rem;
+    }
+    .Creditos img{
+        width: 2.4rem;
+    }
+    .Creditos p {
+        font-size: 0.8rem;
+    }
 
+    /*Eventos*/
+    #eventoTitle h1{
+        font-size: 2rem;
     }
-    .jogo h1 {
-        font-size:2rem;
+
+    #eventoContainer {
+        padding: 0 1rem;
     }
+
+    #fotoPalestra img{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #foto1 {
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    #foto1 img{
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
     
-    .jogo p {
-        font-size: 1rem;
-    }
-
-    
-    .jogo a {
-        padding-top: 28px;
-        margin-bottom: 2rem;
-        height: fit-content;
-        display: inline-block;
-    }
 
     /*Rodapé*/
+
+    footer {
+        margin-top: 3rem;
+    }
 
     #infosContainer {
         display: flex;

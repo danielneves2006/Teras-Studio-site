@@ -1,0 +1,352 @@
+@font-face {
+    font-family:CaesarDressing;
+    src: url(font/CaesarDressing-Regular.ttf);
+}
+
+@font-face {
+    font-family:Anton;
+    src: url(font/Anton-Regular.ttf);
+}
+
+body {
+    background-color: #2d221f;
+}
+
+h1 {
+    color: #958774;
+}
+a{
+    cursor: pointer;
+}
+
+* {
+    margin: 0%;
+    transition: opacity ease-in-out 0.2s;
+}
+
+.NavBar {
+    padding: 0.5rem 0;
+    background-color: #51643E;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SmallBar {
+    width: 4px;
+    height: 44px;
+    background-color: #fff;
+}
+
+.NavBar a {
+    font-family: CaesarDressing;
+    color: #fff;
+    height: fit-content;
+    font-size: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.NavBar a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    transition: ease-in-out .2s;
+}
+.NavBar img{
+    width: 4rem;
+}
+
+.LogoTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoTitle img{
+    width: 5rem;
+}
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    min-height: 8rem;
+}
+#logo{
+    width: 100%; 
+    background-image: url(img/CapyRunner/gifFazendaCapyRunner.gif);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: fit-content;
+}
+#logo h1{
+    font-size:4rem ;
+    font-family:CaesarDressing ;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 0 0 5px #fff;
+}
+
+#pata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pata img{
+    width: 20%; 
+    padding-bottom: 15rem;
+    box-sizing: border-box;
+}
+#pata img:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+/*Dowload*/
+#Dowload p{
+    text-align: center;
+    font-family: Anton;
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#Dowload span{
+    font-size: 2rem;
+    color: #347c96;
+    text-decoration: none;
+}
+#Dowload a:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+main{
+    margin: 8rem;
+}
+/*Gifs*/
+#gifs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#gifs img{
+    width: 30%;
+}
+#gifs img:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+/*StoryBoard*/
+#StoryBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#StoryBoard img{
+    width:96% ;
+}
+/*video*/
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Chapas finais*/
+#chapas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+#chapas img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#chapas img:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+/*Rodapé*/
+footer {
+    background-color: #51643E;
+    margin-top: 10rem;
+}
+
+#infosContainer {
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+
+#infosContainer h2, #contacts h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #172800;
+}
+
+#infosContainer p {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+}
+#infosContainer img{
+    width: 35px;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.socialMedia:hover {
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+#teamContainer {
+    text-align: center;
+}
+#teamContainer span{
+    color:#283a10 ;
+}
+
+#projectsContainer {
+    text-align: left;
+}
+#projectsContainer a{
+    display: flex;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+}
+#projectsContainer a:hover{
+    transform: scale(1.03);
+    transition: ease-in-out .2s;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+}
+
+#contacts p {
+    font-size: 1rem;
+    font-family: Anton;
+    color: #fff
+}
+#contacts span {
+    font-size: 1.3rem;
+    font-family: Anton;
+    color: #283a10
+}
+
+#contacts h2 {
+    font-family: CaesarDressing;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+}
+@media screen and (max-width: 1000px){
+    .NavBar  a {
+        font-size: 1.4rem;
+    }
+    .NavBar img{
+        width: 3rem;
+    }
+    .NavBar #title, #barraUm {
+        display: none;
+    }
+
+
+    /*Banner*/
+    #banner {
+        font-size: 1.4rem;
+    }
+    #logo h1{
+        padding-top: 4rem;
+    }
+    #pata img{
+        padding-top: 2rem;
+        width: 40%;
+    }
+    #chapas{
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+    }
+
+
+    /*Jogos*/
+    main{
+        margin: 1rem;
+    }
+    #Dowload p{
+        font-size: 2rem;
+    }
+    #Dowload span{
+        font-size: 1.7rem;
+    }
+    #gifs{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #gifs img{
+        width: 80%;
+    }
+    #video iframe{
+        height: 200px;
+    }
+    #chapas img{
+        width: 80%;
+        margin-bottom: 0rem;
+    }
+
+
+    /*Rodapé*/
+
+    #infosContainer {
+        display: flex;
+        padding: 1rem 1rem;
+        justify-content: space-between;
+    }
+    #infosContainer h2{
+        font-size: 1rem;
+        color: #172800;
+    }
+    #infosContainer a, #infosContainer p{
+        font-size: 0.6rem;
+    }
+    #infosContainer img{
+        width: 1rem;
+    }
+    
+  
+}

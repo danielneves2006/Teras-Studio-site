@@ -1,11 +1,11 @@
 @font-face {
     font-family:CaesarDressing;
-    src: url(font/CaesarDressing-Regular.ttf);
+    src: url(../../font/CaesarDressing-Regular.ttf);
 }
 
 @font-face {
     font-family:Anton;
-    src: url(font/Anton-Regular.ttf);
+    src: url(../../font/Anton-Regular.ttf);
 }
 
 body {
@@ -86,7 +86,7 @@ a{
     padding-bottom: 25rem;
     width: 100%; 
     height: fit-content; 
-    background-image: url('img/topoBackground2.svg'); 
+    background-image: url('../../img/topoBackground2.svg'); 
     background-size: contain;
     background-position: center; 
     background-repeat: no-repeat; 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="63.012mm" height="63.012mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6301.2 6301.2"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:none}
+    .fil0 {fill:black}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M772.53 7.47l4741.2 0c429,0 780,351 780,780l0 4741.2c0,429 -351,780 -780,780l-4741.2 0c-429,0 -780,-351 -780,-780l0 -4741.2c0,-429 351,-780 780,-780z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M772.53 7.47l4741.2 0c429,0 780,351 780,780l0 4741.2c0,429 -351,780 -780,780l-4741.2 0c-429,0 -780,-351 -780,-780l0 -4741.2c0,-429 351,-780 780,-780z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M772.53 7.47l4741.2 0c429,0 780,351 780,780l0 4741.2c0,429 -351,780 -780,780l-4741.2 0c-429,0 -780,-351 -780,-780l0 -4741.2c0,-429 351,-780 780,-780z"/>
+    </clipPath>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M772.53 7.47l4741.2 0c429,0 780,351 780,780l0 4741.2c0,429 -351,780 -780,780l-4741.2 0c-429,0 -780,-351 -780,-780l0 -4741.2c0,-429 351,-780 780,-780z"/>
+  <g style="clip-path:url(#id0)">
+   <g id="_2405870280208">
+   </g>
+   <g style="clip-path:url(#id1)">
+    <image x="-180.31" y="-165.37" width="6646.9" height="6646.9" xlink:href="imgCaipirinha_Images\imgCaipirinha_ImgID1.png"/>
+   </g>
+   <g style="clip-path:url(#id2)">
+   </g>
+  </g>
+  <path class="fil1" d="M772.53 7.47l4741.2 0c429,0 780,351 780,780l0 4741.2c0,429 -351,780 -780,780l-4741.2 0c-429,0 -780,-351 -780,-780l0 -4741.2c0,-429 351,-780 780,-780z"/>
+ </g>
+</svg>

@@ -1,15 +1,15 @@
 @font-face {
     font-family:CaesarDressing;
-    src: url(font/CaesarDressing-Regular.ttf);
+    src: url(../../font/CaesarDressing-Regular.ttf);
 }
 
 @font-face {
     font-family:Anton;
-    src: url(font/Anton-Regular.ttf);
+    src: url(../../font/Anton-Regular.ttf);
 }
 
 body {
-    background-color: #2d221f;
+    background-color: #202020;
 }
 
 h1 {
@@ -26,7 +26,7 @@ a{
 
 .NavBar {
     padding: 0.5rem 0;
-    background-color: #51643E;
+    background-color: #958774;
     margin: 0%;
     display: flex;
     justify-content: space-between;
@@ -35,12 +35,12 @@ a{
 .SmallBar {
     width: 4px;
     height: 44px;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .NavBar a {
     font-family: CaesarDressing;
-    color: #fff;
+    color: #000;
     height: fit-content;
     font-size: 2rem;
     padding: 0 1rem;
@@ -73,119 +73,86 @@ a{
 }
 
 #banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-    min-height: 8rem;
+    font-size: 2.4rem;
+    font-family: Anton;
+    color: #bcbcbc;
+    text-align: center;
+    margin: 0 8rem;
 }
-#logo{
+
+
+#bannerLogo {
+    padding-top: 2rem;
+    padding-bottom: 25rem;
     width: 100%; 
-    background-image: url(img/CapyRunner/gifFazendaCapyRunner.gif);
-    background-size: cover;
+    height: fit-content; 
+    background-image: url('../../img/topoBackground2.svg'); 
+    background-size: contain;
     background-position: center; 
     background-repeat: no-repeat; 
-    height: fit-content;
-}
-#logo h1{
-    font-size:4rem ;
-    font-family:CaesarDressing ;
-    color: #fff;
-    text-align: center;
-    padding-top: 1rem;
-    text-shadow: 0 0 5px #fff;
+    background-color: #202020;    
 }
 
-#pata{
+#bannerLogo h1 {
+    font-family: CaesarDressing;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+#bannerLogo h1:hover {
+    color: #dfdfdf;
+    transition: ease-in-out .2s;
+    text-shadow: 0 0 10px #cfcfcf,
+                0 0 20px #9c9c9c,
+                0 0 30px #9c9c9c;
+}
+
+
+
+.jogo {
+    margin-top: 15rem;
+    background-color: #202020;
+    padding: 0 8rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-#pata img{
-    width: 20%; 
-    padding-bottom: 15rem;
-    box-sizing: border-box;
-}
-#pata img:hover{
-    transform: scale(1.03);
-    transition: ease-in-out .2s;
-}
-/*Dowload*/
-#Dowload p{
-    text-align: center;
-    font-family: Anton;
+
+.jogo h1 {
+    font-family: CaesarDressing;
     font-size: 3rem;
-    color: #fff;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
-#Dowload span{
+
+.jogo p {
     font-size: 2rem;
-    color: #347c96;
-    text-decoration: none;
+    font-family: Anton;
+    color: #fff;
+    text-align: center;
 }
-#Dowload a:hover{
-    transform: scale(1.03);
-    transition: ease-in-out .2s;
-}
-main{
-    margin: 8rem;
-}
-/*Gifs*/
-#gifs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-#gifs img{
-    width: 30%;
-}
-#gifs img:hover{
-    transform: scale(1.03);
-    transition: ease-in-out .2s;
-}
-/*StoryBoard*/
-#StoryBoard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-#StoryBoard img{
-    width:96% ;
-}
-/*video*/
-#video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*Chapas finais*/
-#chapas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 5rem;
+.jogo span{
+    color: #E0BA52;
 }
 
-#chapas img{
+.jogo a {
+    padding-top: 28px;
+    margin-bottom: 4rem;
+    height: fit-content;
+    display: inline-block;
+}
+
+.jogo img {
     width: 100%;
-    margin-bottom: 1rem;
+    transition: all ease-in-out 0.2s;
+    opacity: 50%;
 }
 
-#chapas img:hover{
+.jogo img:hover {
+    opacity: 100%;
     transform: scale(1.03);
     transition: ease-in-out .2s;
 }
 
-/*Rodapé*/
 footer {
-    background-color: #51643E;
+    background-color: #958774;
     margin-top: 10rem;
 }
 
@@ -195,11 +162,10 @@ footer {
     justify-content: space-between;
 }
 
-#infosContainer h2, #contacts h2 {
+#infosContainer h2 {
     font-family: CaesarDressing;
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #172800;
 }
 
 #infosContainer p {
@@ -230,7 +196,7 @@ footer {
     text-align: center;
 }
 #teamContainer span{
-    color:#283a10 ;
+    color:#5A4933 ;
 }
 
 #projectsContainer {
@@ -265,7 +231,7 @@ footer {
 #contacts span {
     font-size: 1.3rem;
     font-family: Anton;
-    color: #283a10
+    color: #5A4933
 }
 
 #contacts h2 {
@@ -288,47 +254,38 @@ footer {
 
     /*Banner*/
     #banner {
-        font-size: 1.4rem;
-    }
-    #logo h1{
-        padding-top: 4rem;
-    }
-    #pata img{
-        padding-top: 2rem;
-        width: 40%;
-    }
-    #chapas{
-        grid-template-columns: 1fr;
-        margin-top: 5rem;
-    }
-
-
-    /*Jogos*/
-    main{
-        margin: 1rem;
-    }
-    #Dowload p{
+        margin: 1rem ;
         font-size: 2rem;
     }
-    #Dowload span{
-        font-size: 1.7rem;
+
+    #bannerLogo h1 {
+        font-size: 2rem;
     }
-    #gifs{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    #gifs img{
-        width: 80%;
-    }
-    #video iframe{
-        height: 200px;
-    }
-    #chapas img{
-        width: 80%;
-        margin-bottom: 0rem;
+    #bannerLogo {
+        padding-bottom: 10rem;
     }
 
+    /*Jogos*/
+    .jogo {
+        margin-top: 8rem;
+        padding: 2rem;
+
+    }
+    .jogo h1 {
+        font-size:2rem;
+    }
+    
+    .jogo p {
+        font-size: 1rem;
+    }
+
+    
+    .jogo a {
+        padding-top: 28px;
+        margin-bottom: 2rem;
+        height: fit-content;
+        display: inline-block;
+    }
 
     /*Rodapé*/
 
@@ -339,7 +296,6 @@ footer {
     }
     #infosContainer h2{
         font-size: 1rem;
-        color: #172800;
     }
     #infosContainer a, #infosContainer p{
         font-size: 0.6rem;

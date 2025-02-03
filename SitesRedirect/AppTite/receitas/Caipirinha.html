@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>AppTite</title>
+    <link rel="icon" type="image/x-icon" href="img/logoAppTiteBranco.svg">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='receita.css'>
+    <script src='scriptReceitas.js'></script>
+    <script src="https://kit.fontawesome.com/50edefd062.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div id="start">
+            <img src="../img/filtro.svg" alt="" onclick="filtroBtt()">
+
+            <div id="menuCheckBox">
+                <form action="/action_page.php">
+                    <br>
+
+                      <label class="container">Bebidas
+                        <input type="checkbox" checked="filterSelection('bebidas')">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Café da Manhã
+                        <input type="checkbox" checked="filterSelection('cafeDaManha')">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Doce
+                        <input type="checkbox" checked="filterSelection('doce')">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Salgado
+                        <input type="checkbox" checked="filterSelection('Salgado')">
+                        <span class="checkmark"></span>
+                      </label><br>
+
+                      <input id="bttFiltro" type="submit" value="Filtrar">
+                </form>
+            </div>
+        </div>
+
+        <div id="middle">
+            <div id="elements">
+                <!--Menu-->
+                <div id="menuBar">
+                    <a href="../SitesRedirect/AppTite/indexAppTite.html">Início</a>
+                    <a href="#">Assinatura</a>
+                    <a href="#">Suas Informações </a>
+                    <a href="#">Filtros/Pesquisa</a>
+                    <a href="#">Políticas de Privacidade</a>
+                    <a href="#">Sobre mim</a>
+                </div>
+
+                <!--Logo-->
+                <a href="../indexAppTite.html">
+                    <img id="logo" src="../img/logoAppTiteBranco.svg" alt="">
+                </a>
+
+                <!--MenuBtt-->
+                <div class="menuBtt" onclick="toggleNav(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div><!--elements-->
+        </div><!--meio-->
+
+        <div id="end">
+            <div class="search">
+                <label for="searchInput">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                </label>
+                <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Pesquisar">
+            </div>
+
+            <ul id="myUL">
+                <li><a href="../receitas/Caipirinha.html">Caipirinha</a></li>
+                <li><a href="../receitas/ChocolateQuente.html">Chocolate Quente</a></li>
+                <li><a href="../receitas/Omelete.html">Omelete</a></li>
+                <li><a href="../receitas/Tapioca.html">Tapioca</a></li>
+                <li><a href="../receitas/Brigadeiro.html">Brigadeiro</a></li>
+                <li><a href="../receitas/BalaBaiana.html">Bala Baiana</a></li>
+                <li><a href="../receitas/Pizza.html">Pizza</a></li>
+                <li><a href="../receitas/Enroladinho.html">Enroladinho</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="principal">
+            <h1>Caipirinha</h1>
+            <img src="../img/imgCaipirinha.png" alt="">
+        </div>
+
+        <div id="infos">
+            <!--tempo-->
+            <div class="infoElement">
+                <img src="../img/iconFace.png" alt="">
+                <h2>10min</h2>
+            </div>
+            <!--dificuldade-->
+            <div class="infoElement">
+                <img src="../img/iconFace.png" alt="">
+                <h2>Fácil</h2>
+            </div>
+            <!--custo-->
+            <div class="infoElement">
+                <img src="../img/iconFace.png" alt="">
+                <h2>10R$</h2>
+            </div>
+        </div><hr><br><br>
+
+        <div id="descricao">
+            <h1>Descrição</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.
+            </p>
+        </div><hr><br><br>
+
+        <!--INGREDIENTES-->
+        <div id="ingredienetes">
+            <h1>Ingredienetes</h1>
+
+            <p>Vodika</p>
+            <p>Limão</p>
+            <p>Açucar</p>
+            <p></p>
+            <p></p>
+        </div><hr><br><br>
+
+        <!--MATERIAIS-->
+        <div id="materiais">
+            <h1>Materiais</h1>
+
+            <p>Copo</p>
+            <p>Forma de gelo</p>
+            <p>Coqueteleira</p>
+            <p>Faca</p>
+            <p></p>
+        </div><hr><br><br>
+
+        <!--MODE DE PREPARO-->
+        <div id="modoDePreparo">
+            <h1>Modo de Preparo</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <div class="footerConteiner">
+            <div class="redesSociais">
+                <h1>Redes Sociais</h1>
+                <div class="rede">
+                    <img src="../img/iconYT2.png" alt="">
+                    <h2>Youtube</h2>
+                </div>
+                <div class="rede">
+                    <img src="../img/iconInsta2.png" alt="">
+                    <h2>Instagram</h2>
+                </div>
+                <div class="rede">
+                    <img src="../img/iconFace2.png" alt="">
+                    <h2>Facebook</h2>
+                </div>
+            </div>
+            <div class="equipe">
+                <h1>Equipe</h1>
+    
+                <h2>Danilo</h2>
+                <h2>Eamanuel</h2>
+                <h2>Juarez</h2>
+            </div>
+            <div class="contato">
+                <h1>Contato</h1>
+    
+                <h2><span>Email:</span><br> exemplo@gmail.com</h2>
+                <h2><span>Telefone:</span><br>(66) 99222-8765</h2>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

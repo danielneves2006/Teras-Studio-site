@@ -7,16 +7,15 @@
     <title>AppTite</title>
     <link rel="icon" type="image/x-icon" href="img/logoAppTiteBranco.svg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styleAppTite.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styleAppTiteZero.css'>
     <script src="https://kit.fontawesome.com/50edefd062.js" crossorigin="anonymous"></script>
-    <!--Link Swiper CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
     <header>
         <div id="start">
-            <img src="img/filtro.svg" alt="" onclick="filtroBtt()">
+            <img src="../img/filtro.svg" alt="" onclick="filtroBtt()">
 
             <div id="menuCheckBox">
                 <form action="/action_page.php">
@@ -51,7 +50,7 @@
             <div id="elements">
                 <!--Menu-->
                 <div id="menuBar">
-                    <a href="indexAppTite.html">Início</a>
+                    <a href="../SitesRedirect/AppTite/indexAppTite.html">Início</a>
                     <a href="#">Assinatura</a>
                     <a href="#">Suas Informações </a>
                     <a href="#">Filtros/Pesquisa</a>
@@ -60,8 +59,8 @@
                 </div>
 
                 <!--Logo-->
-                <a href="#">
-                    <img id="logo" src="img/logoAppTiteBranco.svg" alt="">
+                <a href="../indexAppTite.html">
+                    <img id="logo" src="../img/logoAppTiteAmarelo.svg" alt="">
                 </a>
 
                 <!--MenuBtt-->
@@ -82,96 +81,101 @@
             </div>
 
             <ul id="myUL">
-                <li><a href="receitas/Caipirinha.html">Caipirinha</a></li>
-                <li><a href="receitas/ChocolateQuente.html">Chocolate Quente</a></li>
-                <li><a href="receitas/Omelete.html">Omelete</a></li>
-                <li><a href="receitas/Tapioca.html">Tapioca</a></li>
-                <li><a href="receitas/Brigadeiro.html">Brigadeiro</a></li>
-                <li><a href="receitas/BalaBaiana.html">Bala Baiana</a></li>
-                <li><a href="receitas/Pizza.html">Pizza</a></li>
-                <li><a href="receitas/Enroladinho.html">Enroladinho</a></li>
+                <li><a href="../receitas/Caipirinha.html">Caipirinha</a></li>
+                <li><a href="../receitas/ChocolateQuente.html">Chocolate Quente</a></li>
+                <li><a href="../receitas/Omelete.html">Omelete</a></li>
+                <li><a href="../receitas/Tapioca.html">Tapioca</a></li>
+                <li><a href="../receitas/Brigadeiro.html">Brigadeiro</a></li>
+                <li><a href="../receitas/BalaBaiana.html">Bala Baiana</a></li>
+                <li><a href="../receitas/Pizza.html">Pizza</a></li>
+                <li><a href="../receitas/Enroladinho.html">Enroladinho</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-    <!--CARDS COMIDA-->
-    
-    <div class="CardContainer swiper">
-        <div class="sliderWaper">
-            <div class="cardList swiper-wrapper" style="width: 15rem;">
-
-                <div class="CardItem swiper-slide">
-                    <a href="receitas/Caipirinha.html">
-                        <img src="img/imgCaipirinha.png" alt="">
-                        <h2 class="titleCard">Caipirinha</h2>
-                    </a>
-                </div>
-            
-                <div class="cardList swiper-slide">
-                    <div class="CardItem">
-                        <a href="receitas/ChocolateQuente.html">
-                            <img src="img/imgChocolateQuente.png" alt="">
-                            <h2 class="titleCard">Chocolate Quente</h2>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="cardList swiper-slide">
-                    <div class="CardItem">
-                        <a href="receitas/BalaBaiana.html">
-                            <img src="img/imgBalaBaiana.png" alt="">
-                            <h2 class="titleCard">Bala Baiana</h2>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="cardList swiper-slide">
-                    <div class="CardItem">
-                        <a href="receitas/Brigadeiro.html">
-                            <img src="img/imgBrigadeiro.png" alt="">
-                            <h2 class="titleCard">Brigadeiro</h2>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="cardList swiper-slide">
-                    <div class="CardItem">
-                        <a href="receitas/Pizza.html">
-                            <img src="img/imgPizza.png" alt="">
-                            <h2 class="titleCard">Pizza</h2>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="CardItem swiper-slide">
-                    <a href="receitas/Enroladinho.html">
-                        <img src="img/imgEnrroladinho.png" alt="">
-                        <h2 class="titleCard">Enrroladinho</h2>
-                    </a>
-                </div>
-
-                <div class="CardItem swiper-slide">
-                    <a href="receitas/Omelete.html">
-                        <img src="img/imgOmelete.png" alt="">
-                        <h2 class="titleCard">Omelete</h2>
-                    </a>
-                </div>
-
-                <div class="CardItem swiper-slide">
-                    <a href="receitas/Tapioca.html">
-                        <img src="img/imgTapioca.png" alt="">
-                        <h2 class="titleCard">Tapioca</h2>
-                    </a>
-                </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
+        <!--Introdução-->
+        <div id="Intro">
+            <h1>Vegano</h1>
         </div>
-    </div>
+
+        <!--CARDS COMIDA-->
         
+
+        <div class="CardContainer swiper">
+            <div class="sliderWaper">
+                <div class="cardList swiper-wrapper" style="width: 15rem;">
+
+                    <div class="CardItem swiper-slide">
+                        <a href="../receitas/Caipirinha.html">
+                            <img src="../img/imgCaipirinha.png" alt="">
+                            <h2 class="titleCard">Caipirinha</h2>
+                        </a>
+                    </div>
+                
+                    <div class="cardList swiper-slide">
+                        <div class="CardItem">
+                            <a href="../receitas/ChocolateQuente.html">
+                                <img src="../img/imgChocolateQuente.png" alt="">
+                                <h2 class="titleCard">Chocolate Quente</h2>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="cardList swiper-slide">
+                        <div class="CardItem">
+                            <a href="../receitas/BalaBaiana.html">
+                                <img src="../img/imgBalaBaiana.png" alt="">
+                                <h2 class="titleCard">Bala Baiana</h2>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="cardList swiper-slide">
+                        <div class="CardItem">
+                            <a href="../receitas/Brigadeiro.html">
+                                <img src="../img/imgBrigadeiro.png" alt="">
+                                <h2 class="titleCard">Brigadeiro</h2>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="cardList swiper-slide">
+                        <div class="CardItem">
+                            <a href="../receitas/Pizza.html">
+                                <img src="../img/imgPizza.png" alt="">
+                                <h2 class="titleCard">Pizza</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="CardItem swiper-slide">
+                        <a href="../receitas/Enroladinho.html">
+                            <img src="../img/imgEnrroladinho.png" alt="">
+                            <h2 class="titleCard">Enrroladinho</h2>
+                        </a>
+                    </div>
+
+                    <div class="CardItem swiper-slide">
+                        <a href="../receitas/Omelete.html">
+                            <img src="../img/imgOmelete.png" alt="">
+                            <h2 class="titleCard">Omelete</h2>
+                        </a>
+                    </div>
+
+                    <div class="CardItem swiper-slide">
+                        <a href="../receitas/Tapioca.html">
+                            <img src="../img/imgTapioca.png" alt="">
+                            <h2 class="titleCard">Tapioca</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
 
         <!-- SLIDESHOW -->
         <!-- Slideshow container -->
@@ -180,19 +184,19 @@
             <!-- Full-width images with number and caption text --> 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="img/galeria/img1.png" style="width:100%">
+                <img src="../img/galeria/img1.png" style="width:100%">
                 <div class="text">Caption Fuor</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="img/galeria/img2.png" style="width:100% ">
+                <img src="../img/galeria/img2.png" style="width:100% ">
                 <div class="text">Caption Five</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext"></div>
-                <img src="img/galeria/img3.png" style="width:100% ">
+                <img src="../img/galeria/img3.png" style="width:100% ">
                 <div class="text">Caption Six</div>
             </div>
 
@@ -215,21 +219,21 @@
         </div>
         <div class="receitasRestritivas">
             <div class="restritivas">
-                <a href="Zero/indexAppTiteZeroAcucar.html">
-                    <img src="img/semAcucar.png" alt="">
+                <a href="indexAppTiteZeroAcucar.html">
+                    <img src="../img/semAcucar.png" alt="">
                 </a>
             </div>
             <div class="restritivas">
-                <a href="Zero/indexAppTiteZeroGlutem.html">
-                    <img src="img/semGluten.png" alt="">
+                <a href="indexAppTiteZeroGlutem.html">
+                    <img src="../img/semGluten.png" alt="">
                 </a>
             </div>            <div class="restritivas">
-                <a href="Zero/indexAppTiteZeroLactose.html">
-                    <img src="img/semLactose.png" alt="">
+                <a href="indexAppTiteZeroLactose.html">
+                    <img src="../img/semLactose.png" alt="">
                 </a>
             </div>            <div class="restritivas">
-                <a href="Zero/indexAppTiteZeroVegano.html">
-                    <img src="img/vegano.png" alt="">
+                <a href="indexAppTiteZeroVegano.html">
+                    <img src="../img/vegano.png" alt="">
                 </a>
             </div>
         </div>
@@ -241,15 +245,15 @@
             <div class="redesSociais">
                 <h1>Redes Sociais</h1>
                 <div class="rede">
-                    <img src="img/iconYT2.png" alt="">
+                    <img src="../img/iconYT2.png" alt="">
                     <h2>Youtube</h2>
                 </div>
                 <div class="rede">
-                    <img src="img/iconInsta2.png" alt="">
+                    <img src="../img/iconInsta2.png" alt="">
                     <h2>Instagram</h2>
                 </div>
                 <div class="rede">
-                    <img src="img/iconFace2.png" alt="">
+                    <img src="../img/iconFace2.png" alt="">
                     <h2>Facebook</h2>
                 </div>
             </div>
@@ -270,8 +274,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src='scriptAppTite.js'></script>
-
+    <script src='scriptAppTiteZero.js'></script>
 </body>
 
 </html>

@@ -40,8 +40,6 @@ function currentSlide(n) {
 showSlides(slideIndex = n);
 }
 
-
-
 function showSlides(n) {
 let i;
 let slides = document.getElementsByClassName("mySlides");
@@ -63,20 +61,20 @@ dots[slideIndex-1].className += " active";
 
 function filtroBtt(){
 
-  const checkbox = document.getElementById("menuCheckBox");
-  const middle = document.getElementById("middle");
+    const checkbox = document.getElementById("menuCheckBox");
+    const middle = document.getElementById("middle");
 
-  
-  if (checkbox.style.display === "flex") {
-      // Fecha o checkbox
-      checkbox.style.display = "none";
-      middle.style.marginLeft = "8rem";
+    
+    if (checkbox.style.display === "flex") {
+        // Fecha o checkbox
+        checkbox.style.display = "none";
+        middle.style.marginLeft = "8rem";
 
-  } else {
-      // Abre o checkbox
-      checkbox.style.display = "flex";
-      middle.style.marginLeft = "1.1rem";
-  }
+    } else {
+        // Abre o checkbox
+        checkbox.style.display = "flex";
+        middle.style.marginLeft = "1.1rem";
+    }
 }
 
 
@@ -90,9 +88,8 @@ function toggleNav(x) {
     
     if (menu.style.paddingBottom === "8rem") {
         // Fecha o menu
-        menu.style.paddingBottom = "0rem";
-
-        menu.style.backgroundImage = "url('img/meioCirculo.svg')";
+        menu.style.paddingBottom = "3rem";
+        menu.style.backgroundImage = "url('../img/meioCirculoBranco.svg')";
         menuA.style.display = "none";
 
     } else {
@@ -102,7 +99,7 @@ function toggleNav(x) {
       // Ajusta valores com base no @media query
 
       if (mediaQuery.matches) {// Telas menores
-          menu.style.backgroundImage = "url('img/linguaMeioCirculo.svg')";
+          menu.style.backgroundImage = "url('../img/linguaMeioCirculoBanco.svg')";
           menu.style.backgroundSize = "contain";
           menuA.style.flexDirection = "column";
           menuA.style.width = "1rem"
@@ -110,7 +107,7 @@ function toggleNav(x) {
           menu.style.paddingBottom = "8rem"; 
       } else {// Telas maiores
           menu.style.paddingBottom = "8rem";
-          menu.style.backgroundImage = "url('img/linguaMeioCirculo.svg')";
+          menu.style.backgroundImage = "url('../img/linguaMeioCirculoBanco.svg')";
           menuA.style.backgroundSize = "auto";
       }
   } 

@@ -92,7 +92,7 @@ function toggleNav(x) {
         // Fecha o menu
         menu.style.paddingBottom = "0rem";
 
-        menu.style.backgroundImage = "url('img/meioCirculo.svg')";
+        menu.style.backgroundImage = "url('../img/meioCirculo.svg')";
         menuA.style.display = "none";
 
     } else {
@@ -102,7 +102,7 @@ function toggleNav(x) {
       // Ajusta valores com base no @media query
 
       if (mediaQuery.matches) {// Telas menores
-          menu.style.backgroundImage = "url('img/linguaMeioCirculo.svg')";
+          menu.style.backgroundImage = "url('../img/linguaMeioCirculo.svg')";
           menu.style.backgroundSize = "contain";
           menuA.style.flexDirection = "column";
           menuA.style.width = "1rem"
@@ -110,7 +110,7 @@ function toggleNav(x) {
           menu.style.paddingBottom = "8rem"; 
       } else {// Telas maiores
           menu.style.paddingBottom = "8rem";
-          menu.style.backgroundImage = "url('img/linguaMeioCirculo.svg')";
+          menu.style.backgroundImage = "url('../img/linguaMeioCirculo.svg')";
           menuA.style.backgroundSize = "auto";
       }
   } 

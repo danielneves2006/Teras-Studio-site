@@ -2,7 +2,7 @@
 
 @font-face {
   font-family:Coves;
-  src: url(font/CovesBold.otf);
+  src: url(../font/CovesBold.otf);
 }
 
 header{
@@ -10,21 +10,102 @@ header{
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 2rem;
-
 }
+
 /*COMEÇO*/
 #start{
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 #start img{
-    width: 3rem;
+  width: 3rem;
 }
 #menuCheckBox{
-    display: none;
-    padding-top: 1rem;
+display: none;
+}
+/* Customize the label (the container) */
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+cursor: pointer;
+font-size: 1.3rem;
+font-family:Coves ;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 15px;
+width: 15px;
+background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+background-color: #e9bd00;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 4px;
+top: 1px;
+width: 5px;
+height: 9px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+#bttFiltro{
+border-radius: 10%;
+border: none;
+color: #fff;
+background-color: #e9bd00;
+font-family: Coves;
+width: 5rem;
+height: 2rem;
+}
+#bttFiltro:hover{
+background-color: #c66e08;
 }
 
 /*MEIO*/
+#middle{
+  margin-left: 8rem;
+}
 #elements{
     display:flex ;
     flex-direction: column;
@@ -32,7 +113,7 @@ header{
     justify-content: center;
 
     /*meia lua amarela*/
-    background-image: url(img/meioCirculo.svg);
+    background-image: url(../img/meioCirculo.svg);
     background-repeat: no-repeat;    
     background-position-x: center;
     background-size: contain;
@@ -92,23 +173,51 @@ header{
 
 /*FIM*/
 #end{
-    padding-top: 2rem;
+  
+  padding-top: 2rem;
 }
 .search{
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    background-color: #00000006;
-    width: 12rem;
-    padding: 5px 10px;
-    border-radius: 20px;
-    color: #e9bd00;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #00000006;
+  width: 12rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #e9bd00;
 }
 #searchInput{
-    text-align: center;
-    border: none;
-    background-color: transparent;
-    outline: none;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+#myUL {
+/* Remove default list styling */
+display: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#myUL li a {
+border: 1px solid #ddd; /* Add a border to all links */
+margin-top: -1px; /* Prevent double borders */
+background-color: #f6f6f6; /* Grey background color */
+padding: 5px; /* Add some padding */
+text-decoration: none; /* Remove default text underline */
+font-size: 0.8rem; /* Increase the font-size */
+color: black; /* Add a black text color */
+display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+#end:focus-within #myUL {
+display: block; /* Exibe a lista quando o foco está dentro do .search */
 }
 /*MAIN*/
 main h1{
@@ -244,7 +353,24 @@ main p{
 }
 
 @media screen and (max-width: 1020px){
-    /*MENU*/
+    
+  #middle{
+    margin-left: -1rem;
+  }
+  /*MENU*/
+
+  main h1{
+      font-size: 2rem;
+      padding-bottom: 1rem;
+  }
+  main p{
+      text-align: center;
+      color: #202020;
+      font-family: Coves;
+      font-size: 1.3rem;
+      padding-bottom: 1rem;
+      margin: 0 2rem 0 2rem;
+  }
     #start{
       display: none;
     }
@@ -260,6 +386,21 @@ main p{
       width: 8rem;
     }
     
+
+    #infos{
+      gap: 2rem;
+      margin: 3rem 1rem 4rem 1rem;
+      padding: 1rem;
+      box-shadow: 0 0 5px 5px #20202028;
+      background-color: #e9be0044;
+  }
+  #infos img{
+      width: 1.5rem;
+  }
+  .infoElement{
+      gap: 1rem;
+  }
+
     
     
     

@@ -3,28 +3,44 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>AppTite</title>
+    <link rel="icon" type="image/x-icon" href="img/logoAppTiteBranco.svg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='receita.css'>
-    <script src='script.js'></script>
+    <script src='scriptReceitas.js'></script>
+    <script src="https://kit.fontawesome.com/50edefd062.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <div id="start">
-            <img src="img/filtro.svg" alt="" onclick="filtroBtt()">
+            <img src="../img/filtro.svg" alt="" onclick="filtroBtt()">
 
             <div id="menuCheckBox">
                 <form action="/action_page.php">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Bebidas</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> Café da Manhã</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Doce</label><br>
-                    <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
-                    <label for="vehicle3"> Salgado</label><br><br>
+                    <br>
 
-                    <input type="submit" value="Filtrar">
+                      <label class="container">Bebidas
+                        <input type="checkbox" checked="filterSelection('bebidas')">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Café da Manhã
+                        <input type="checkbox" checked="filterSelection('cafeDaManha')">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Doce
+                        <input type="checkbox" checked="filterSelection('doce')">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Salgado
+                        <input type="checkbox" checked="filterSelection('Salgado')">
+                        <span class="checkmark"></span>
+                      </label><br>
+
+                      <input id="bttFiltro" type="submit" value="Filtrar">
                 </form>
             </div>
         </div>
@@ -33,7 +49,7 @@
             <div id="elements">
                 <!--Menu-->
                 <div id="menuBar">
-                    <a href="index.html">Início</a>
+                    <a href="../SitesRedirect/AppTite/indexAppTite.html">Início</a>
                     <a href="#">Assinatura</a>
                     <a href="#">Suas Informações </a>
                     <a href="#">Filtros/Pesquisa</a>
@@ -42,8 +58,8 @@
                 </div>
 
                 <!--Logo-->
-                <a href="index.html">
-                    <img id="logo" src="img/logoAppTiteBranco.svg" alt="">
+                <a href="../indexAppTite.html">
+                    <img id="logo" src="../img/logoAppTiteBranco.svg" alt="">
                 </a>
 
                 <!--MenuBtt-->
@@ -60,31 +76,42 @@
                 <label for="searchInput">
                     <span class="fa-solid fa-magnifying-glass"></span>
                 </label>
-                <input type="text" id="searchInput" placeholder="Pesquisar ">
+                <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Pesquisar">
             </div>
+
+            <ul id="myUL">
+                <li><a href="../receitas/Caipirinha.html">Caipirinha</a></li>
+                <li><a href="../receitas/ChocolateQuente.html">Chocolate Quente</a></li>
+                <li><a href="../receitas/Omelete.html">Omelete</a></li>
+                <li><a href="../receitas/Tapioca.html">Tapioca</a></li>
+                <li><a href="../receitas/Brigadeiro.html">Brigadeiro</a></li>
+                <li><a href="../receitas/BalaBaiana.html">Bala Baiana</a></li>
+                <li><a href="../receitas/Pizza.html">Pizza</a></li>
+                <li><a href="../receitas/Enroladinho.html">Enroladinho</a></li>
+            </ul>
         </div>
     </header>
 
     <main>
         <div id="principal">
-            <h1>Caipirinha</h1>
-            <img src="img/imgCaipirinha.png" alt="">
+            <h1>Omelete</h1>
+            <img src="../img/imgOmelete.png" alt="">
         </div>
 
         <div id="infos">
             <!--tempo-->
             <div class="infoElement">
-                <img src="img/iconFace.png" alt="">
+                <img src="../img/iconFace.png" alt="">
                 <h2>10min</h2>
             </div>
             <!--dificuldade-->
             <div class="infoElement">
-                <img src="img/iconFace.png" alt="">
+                <img src="../img/iconFace.png" alt="">
                 <h2>Fácil</h2>
             </div>
             <!--custo-->
             <div class="infoElement">
-                <img src="img/iconFace.png" alt="">
+                <img src="../img/iconFace.png" alt="">
                 <h2>10R$</h2>
             </div>
         </div><hr><br><br>
@@ -147,15 +174,15 @@
             <div class="redesSociais">
                 <h1>Redes Sociais</h1>
                 <div class="rede">
-                    <img src="img/iconYT2.png" alt="">
+                    <img src="../img/iconYT2.png" alt="">
                     <h2>Youtube</h2>
                 </div>
                 <div class="rede">
-                    <img src="img/iconInsta2.png" alt="">
+                    <img src="../img/iconInsta2.png" alt="">
                     <h2>Instagram</h2>
                 </div>
                 <div class="rede">
-                    <img src="img/iconFace2.png" alt="">
+                    <img src="../img/iconFace2.png" alt="">
                     <h2>Facebook</h2>
                 </div>
             </div>

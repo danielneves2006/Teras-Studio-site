@@ -154,13 +154,13 @@ const swiper = new Swiper('.sliderWaper', {
   },
   breakpoints: {
       0: {
-          slidesPerView: 'auto' // Ou um número, se preferir
+          slidesPerView: 1 // Ou um número, se preferir
       },
       620: {
-          slidesPerView: 'auto' // Ou um número, se preferir
+          slidesPerView: 2 // Ou um número, se preferir
       },
       1024: {
-          slidesPerView: 'auto' // Ou um número, se preferir
+          slidesPerView: 3 // Ou um número, se preferir
       }
   }
 });
